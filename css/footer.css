@@ -7,6 +7,7 @@
 .footer .container {
   display: flex;
   align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 .footer-motto {
@@ -58,12 +59,28 @@
   margin-bottom: 16px;
 }
 
+.subs-form {
+  display: flex;
+}
+
 .subs-input {
+  width: 264px;
+  height: 40px;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 4px;
   padding: 8px 16px;
   color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 24px;
+}
+
+.subs-input:focus {
+  border-color: #31d0aa;
 }
 
 .subs-input::placeholder {
@@ -75,25 +92,25 @@
 }
 
 .subs-btn {
-  position: relative;
+  display: flex;
+  gap: 16px;
   background-color: #4d5ae5;
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  margin-left: 24px;
-  padding: 8px 64px 8px 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subs-icon {
-  position: absolute;
   fill: #ffffff;
-  top: 50%;
-  right: 24px;
-  transform: translateY(-50%);
 }
 
-.subs-btn:hover {
+.subs-btn:hover,
+.subs-btn:focus {
   cursor: pointer;
   background-color: #31d0aa;
 }
