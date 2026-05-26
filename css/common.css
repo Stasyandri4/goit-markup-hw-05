@@ -28,6 +28,15 @@ ol {
   margin: 0;
 }
 
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
 .container {
   display: flex;
   max-width: 1158px;
