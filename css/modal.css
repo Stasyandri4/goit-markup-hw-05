@@ -9,9 +9,9 @@
   height: 100vh;
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 999;
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  visibility: hidden; */
+  visibility: hidden;
 }
 
 .backdrop.is-open {
@@ -38,6 +38,8 @@
 
 .form-close-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -59,6 +61,7 @@
   fill: #ffffff;
 }
 
+.form-close-link:focus,
 .form-close-link:hover {
   background-color: #404bbf;
   border: 1px solid #404bbf;
@@ -126,20 +129,27 @@
 .form-textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .form-textarea {
+  background-color: #fcfcfc;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   padding: 8px 16px;
   resize: none;
   height: 120px;
   width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.from-textarea:focus {
+.form-textarea:focus {
   border-color: #4d5ae5;
   outline: none;
 }
@@ -150,12 +160,14 @@
 }
 
 .form-label-checkbox {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-left: 8px;
 }
 
 .form-checkbox {
@@ -199,10 +211,10 @@
 }
 
 .privacy-policy-link {
-  line-height: 1.33;
+  line-height: 1.17;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #4e5ae5;
+  color: #4d5ae5;
 }
 
 .btn-container {
