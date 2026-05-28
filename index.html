@@ -485,13 +485,13 @@
       </div>
     </footer>
 
-    <div class="backdrop">
-      <div class="modal" id="modal">
-        <a href="" class="form-close-link">
-          <svg height="12" width="12" class="form-close">
+    <div class="backdrop" id="modal">
+      <div class="modal">
+        <button type="submit" class="form-close-link">
+          <svg height="8" width="8" class="form-close">
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
-        </a>
+        </button>
         <p class="form-heading">
           Leave your contacts and we will call you back
         </p>
@@ -502,7 +502,7 @@
               <label class="form-label" for="name"> Name</label>
               <div class="form-icon-wrapper">
                 <input class="form-input" type="text" id="name" name="name" />
-                <svg class="form-icon" height="12" width="12">
+                <svg class="form-icon" height="18" width="24">
                   <use href="./images/icons.svg#icon-name"></use>
                 </svg>
               </div>
@@ -517,7 +517,7 @@
                   id="phone-number"
                   name="phone"
                 />
-                <svg class="form-icon" height="12" width="12">
+                <svg class="form-icon" height="18" width="24">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
@@ -532,13 +532,13 @@
                   id="email"
                   name="email"
                 />
-                <svg class="form-icon" height="12" width="12">
+                <svg class="form-icon" height="18" width="24">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div>
             </li>
 
-            <li class="form-item">
+            <li class="form-item comment">
               <label class="form-label" for="comment">Comment</label>
               <textarea
                 class="form-textarea"
@@ -554,6 +554,7 @@
                   class="form-checkbox sr-only"
                   type="checkbox"
                   id="checkbox"
+                  name="policy-privacy"
                 />
                 <label class="form-label-checkbox" for="checkbox">
                   <span class="custom-checkbox">
@@ -561,9 +562,9 @@
                       <use href="./images/icons.svg#icon-check-mark"></use>
                     </svg>
                   </span>
-                  <span>
+                  <span class="privacy-policy">
                     I accept the terms and conditions of the
-                    <a class="privacy-policy" href="">Privacy Policy</a>
+                    <a class="privacy-policy-link" href="">Privacy Policy</a>
                   </span>
                 </label>
               </div>
